@@ -1,0 +1,323 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient backgrounds -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a1c4fd" />
+      <stop offset="50%" stop-color="#8BC6EC" />
+      <stop offset="100%" stop-color="#FF9A8B" />
+    </linearGradient>
+    <linearGradient id="groundGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#96e6a1" />
+      <stop offset="50%" stop-color="#b9e769" />
+      <stop offset="100%" stop-color="#d4a76a" />
+    </linearGradient>
+    <linearGradient id="overlayGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.7" />
+      <stop offset="20%" stop-color="white" stop-opacity="0" />
+      <stop offset="80%" stop-color="white" stop-opacity="0" />
+      <stop offset="100%" stop-color="white" stop-opacity="0.7" />
+    </linearGradient>
+    <filter id="softBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+    </filter>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect x="0" y="0" width="1200" height="300" fill="url(#skyGradient)" />
+  
+  <!-- Ground -->
+  <rect x="0" y="300" width="1200" height="200" fill="url(#groundGradient)" />
+  
+  <!-- Clouds -->
+  <g fill="white" opacity="0.8">
+    <ellipse cx="120" cy="80" rx="50" ry="30" />
+    <ellipse cx="160" cy="90" rx="40" ry="25" />
+    <ellipse cx="90" cy="90" rx="45" ry="20" />
+    
+    <ellipse cx="320" cy="60" rx="60" ry="25" />
+    <ellipse cx="370" cy="70" rx="50" ry="20" />
+    
+    <ellipse cx="820" cy="100" rx="70" ry="30" />
+    <ellipse cx="880" cy="110" rx="60" ry="25" />
+  </g>
+  
+  <!-- Birds -->
+  <path d="M500,80 C510,70 520,80 530,70 C520,80 530,90 520,90 Z" fill="#333" />
+  <path d="M550,110 C560,100 570,110 580,100 C570,110 580,120 570,120 Z" fill="#333" />
+  <path d="M530,70 C540,60 550,70 560,60 C550,70 560,80 550,80 Z" fill="#333" />
+
+  <!-- 1. Cozy House (Left) -->
+  <g transform="translate(150, 280)">
+    <!-- House base -->
+    <rect x="0" y="0" width="120" height="100" fill="#e8d0b0" stroke="#7d5a44" stroke-width="2" />
+    
+    <!-- Roof -->
+    <polygon points="0,0 60,-50 120,0" fill="#7d5a44" stroke="#5d3a24" stroke-width="2" />
+    
+    <!-- Door -->
+    <rect x="45" y="50" width="30" height="50" fill="#5d3a24" />
+    <circle cx="65" cy="75" r="3" fill="#f0d890" />
+    
+    <!-- Windows -->
+    <rect x="15" y="30" width="25" height="25" fill="#fef9e7" stroke="#7d5a44" stroke-width="2" />
+    <rect x="80" y="30" width="25" height="25" fill="#fef9e7" stroke="#7d5a44" stroke-width="2" />
+    <line x1="15" y1="42.5" x2="40" y2="42.5" stroke="#7d5a44" stroke-width="2" />
+    <line x1="27.5" y1="30" x2="27.5" y2="55" stroke="#7d5a44" stroke-width="2" />
+    <line x1="80" y1="42.5" x2="105" y2="42.5" stroke="#7d5a44" stroke-width="2" />
+    <line x1="92.5" y1="30" x2="92.5" y2="55" stroke="#7d5a44" stroke-width="2" />
+    
+    <!-- Chimney -->
+    <rect x="80" y="-40" width="15" height="30" fill="#a67c52" stroke="#7d5a44" stroke-width="1" />
+    <rect x="77" y="-45" width="21" height="5" fill="#7d5a44" />
+    
+    <!-- Garden -->
+    <rect x="-30" y="100" width="180" height="20" fill="#7aa655" />
+    <path d="M-20,105 Q-10,95 0,105 Q10,115 20,105 Q30,95 40,105 Q50,115 60,105 Q70,95 80,105 Q90,115 100,105 Q110,95 120,105 Q130,115 140,105" fill="none" stroke="#f19ec2" stroke-width="2" />
+    <path d="M-25,115 Q-15,105 -5,115 Q5,125 15,115 Q25,105 35,115 Q45,125 55,115 Q65,105 75,115 Q85,125 95,115 Q105,105 115,115 Q125,125 135,115" fill="none" stroke="#f4a742" stroke-width="2" />
+    
+    <!-- Picket fence -->
+    <g stroke="#e8d0b0" stroke-width="2" fill="#f5e9d5">
+      <line x1="-30" y1="100" x2="-30" y2="120" />
+      <line x1="-20" y1="100" x2="-20" y2="120" />
+      <line x1="-10" y1="100" x2="-10" y2="120" />
+      <line x1="0" y1="100" x2="0" y2="120" />
+      <line x1="10" y1="100" x2="10" y2="120" />
+      <line x1="20" y1="100" x2="20" y2="120" />
+      <line x1="30" y1="100" x2="30" y2="120" />
+      <line x1="40" y1="100" x2="40" y2="120" />
+      <line x1="50" y1="100" x2="50" y2="120" />
+      <line x1="60" y1="100" x2="60" y2="120" />
+      <line x1="70" y1="100" x2="70" y2="120" />
+      <line x1="80" y1="100" x2="80" y2="120" />
+      <line x1="90" y1="100" x2="90" y2="120" />
+      <line x1="100" y1="100" x2="100" y2="120" />
+      <line x1="110" y1="100" x2="110" y2="120" />
+      <line x1="120" y1="100" x2="120" y2="120" />
+      <line x1="130" y1="100" x2="130" y2="120" />
+      <line x1="140" y1="100" x2="140" y2="120" />
+      <line x1="150" y1="100" x2="150" y2="120" />
+      <line x1="-30" y1="110" x2="150" y2="110" />
+    </g>
+    
+    <!-- House warm glow effect -->
+    <rect x="15" y="30" width="25" height="25" fill="#ffdb58" opacity="0.3" />
+    <rect x="80" y="30" width="25" height="25" fill="#ffdb58" opacity="0.3" />
+    <rect x="45" y="50" width="30" height="50" fill="#ffdb58" opacity="0.2" />
+  </g>
+
+  <!-- 2. Farm Field (Center-left) -->
+  <g transform="translate(400, 300)">
+    <!-- Base field -->
+    <rect x="0" y="0" width="250" height="200" fill="#7aa655" />
+    
+    <!-- Crop rows -->
+    <g stroke="#5d8141" stroke-width="2">
+      <line x1="0" y1="20" x2="250" y2="20" opacity="0.7" />
+      <line x1="0" y1="40" x2="250" y2="40" opacity="0.7" />
+      <line x1="0" y1="60" x2="250" y2="60" opacity="0.7" />
+      <line x1="0" y1="80" x2="250" y2="80" opacity="0.7" />
+      <line x1="0" y1="100" x2="250" y2="100" opacity="0.7" />
+      <line x1="0" y1="120" x2="250" y2="120" opacity="0.7" />
+      <line x1="0" y1="140" x2="250" y2="140" opacity="0.7" />
+      <line x1="0" y1="160" x2="250" y2="160" opacity="0.7" />
+      <line x1="0" y1="180" x2="250" y2="180" opacity="0.7" />
+    </g>
+    
+    <!-- Crop plants -->
+    <g fill="#8eba60">
+      <g transform="translate(20, 10)">
+        <circle cx="0" cy="0" r="5" />
+        <circle cx="0" cy="20" r="5" />
+        <circle cx="0" cy="40" r="5" />
+        <circle cx="0" cy="60" r="5" />
+        <circle cx="0" cy="80" r="5" />
+        <circle cx="0" cy="100" r="5" />
+        <circle cx="0" cy="120" r="5" />
+        <circle cx="0" cy="140" r="5" />
+        <circle cx="0" cy="160" r="5" />
+      </g>
+      <g transform="translate(60, 10)">
+        <circle cx="0" cy="0" r="5" />
+        <circle cx="0" cy="20" r="5" />
+        <circle cx="0" cy="40" r="5" />
+        <circle cx="0" cy="60" r="5" />
+        <circle cx="0" cy="80" r="5" />
+        <circle cx="0" cy="100" r="5" />
+        <circle cx="0" cy="120" r="5" />
+        <circle cx="0" cy="140" r="5" />
+        <circle cx="0" cy="160" r="5" />
+      </g>
+      <g transform="translate(100, 10)">
+        <circle cx="0" cy="0" r="5" />
+        <circle cx="0" cy="20" r="5" />
+        <circle cx="0" cy="40" r="5" />
+        <circle cx="0" cy="60" r="5" />
+        <circle cx="0" cy="80" r="5" />
+        <circle cx="0" cy="100" r="5" />
+        <circle cx="0" cy="120" r="5" />
+        <circle cx="0" cy="140" r="5" />
+        <circle cx="0" cy="160" r="5" />
+      </g>
+      <g transform="translate(140, 10)">
+        <circle cx="0" cy="0" r="5" />
+        <circle cx="0" cy="20" r="5" />
+        <circle cx="0" cy="40" r="5" />
+        <circle cx="0" cy="60" r="5" />
+        <circle cx="0" cy="80" r="5" />
+        <circle cx="0" cy="100" r="5" />
+        <circle cx="0" cy="120" r="5" />
+        <circle cx="0" cy="140" r="5" />
+        <circle cx="0" cy="160" r="5" />
+      </g>
+      <g transform="translate(180, 10)">
+        <circle cx="0" cy="0" r="5" />
+        <circle cx="0" cy="20" r="5" />
+        <circle cx="0" cy="40" r="5" />
+        <circle cx="0" cy="60" r="5" />
+        <circle cx="0" cy="80" r="5" />
+        <circle cx="0" cy="100" r="5" />
+        <circle cx="0" cy="120" r="5" />
+        <circle cx="0" cy="140" r="5" />
+        <circle cx="0" cy="160" r="5" />
+      </g>
+      <g transform="translate(220, 10)">
+        <circle cx="0" cy="0" r="5" />
+        <circle cx="0" cy="20" r="5" />
+        <circle cx="0" cy="40" r="5" />
+        <circle cx="0" cy="60" r="5" />
+        <circle cx="0" cy="80" r="5" />
+        <circle cx="0" cy="100" r="5" />
+        <circle cx="0" cy="120" r="5" />
+        <circle cx="0" cy="140" r="5" />
+        <circle cx="0" cy="160" r="5" />
+      </g>
+    </g>
+    
+    <!-- Tractor in the distance -->
+    <g transform="translate(180, 70) scale(0.7)">
+      <rect x="0" y="0" width="40" height="25" fill="#e63946" stroke="#333" stroke-width="1" />
+      <rect x="40" y="5" width="15" height="20" fill="#e63946" stroke="#333" stroke-width="1" />
+      <circle cx="10" cy="25" r="8" fill="#333" stroke="#222" stroke-width="1" />
+      <circle cx="45" cy="25" r="12" fill="#333" stroke="#222" stroke-width="1" />
+      <rect x="5" y="-10" width="25" height="10" fill="#e63946" stroke="#333" stroke-width="1" />
+    </g>
+  </g>
+
+  <!-- 3. SUV/Vehicle (Center-right) -->
+  <g transform="translate(700, 340)">
+    <!-- Road -->
+    <rect x="-50" y="30" width="300" height="80" fill="#555" />
+    <rect x="-50" y="69" width="300" height="2" fill="#fff" stroke="none" stroke-dasharray="10,10" />
+    
+    <!-- Car body - SUV with perspective -->
+    <g transform="skewX(-10)">
+      <!-- Main body -->
+      <rect x="30" y="-20" width="140" height="40" rx="5" fill="#2a6f97" stroke="#333" stroke-width="1" />
+      
+      <!-- Lower body -->
+      <rect x="20" y="20" width="160" height="30" rx="3" fill="#2a6f97" stroke="#333" stroke-width="1" />
+      
+      <!-- Windows with reflection -->
+      <rect x="45" y="-15" width="30" height="25" fill="#a8dadc" opacity="0.8" stroke="#333" stroke-width="1" />
+      <rect x="85" y="-15" width="30" height="25" fill="#a8dadc" opacity="0.8" stroke="#333" stroke-width="1" />
+      <rect x="125" y="-15" width="30" height="25" fill="#a8dadc" opacity="0.8" stroke="#333" stroke-width="1" />
+      
+      <!-- Window reflections -->
+      <polygon points="45,-15 75,-15 65,-5 55,-5" fill="white" opacity="0.4" />
+      <polygon points="85,-15 115,-15 105,-5 95,-5" fill="white" opacity="0.4" />
+      <polygon points="125,-15 155,-15 145,-5 135,-5" fill="white" opacity="0.4" />
+      
+      <!-- Wheels -->
+      <circle cx="50" cy="50" r="15" fill="#333" />
+      <circle cx="50" cy="50" r="8" fill="#777" />
+      <circle cx="150" cy="50" r="15" fill="#333" />
+      <circle cx="150" cy="50" r="8" fill="#777" />
+      
+      <!-- Luggage on top -->
+      <rect x="60" y="-30" width="80" height="10" rx="2" fill="#333" stroke="#222" stroke-width="1" />
+      <rect x="65" y="-35" width="70" height="5" rx="2" fill="#555" stroke="#333" stroke-width="1" />
+      
+      <!-- Details -->
+      <rect x="155" y="5" width="20" height="10" fill="#f94144" /> <!-- Tail light -->
+      <rect x="25" y="5" width="10" height="10" fill="#f8f9fa" /> <!-- Headlight -->
+      <rect x="20" y="30" width="160" height="3" fill="#333" /> <!-- Trim -->
+    </g>
+  </g>
+
+  <!-- 4. Restaurant Setting (Far right) -->
+  <g transform="translate(950, 330)">
+    <!-- Table -->
+    <ellipse cx="100" cy="60" rx="80" ry="30" fill="#a67c52" stroke="#7d5a44" stroke-width="2" />
+    
+    <!-- Tablecloth -->
+    <ellipse cx="100" cy="58" rx="75" ry="27" fill="#f5f5f5" stroke="#e5e5e5" stroke-width="1" />
+    
+    <!-- Wine glasses -->
+    <g transform="translate(60, 40)">
+      <path d="M0,0 L-5,15 L5,15 Z" fill="#f8f9fa" opacity="0.7" stroke="#ccc" stroke-width="1" />
+      <rect x="-1" y="15" width="2" height="10" fill="#f8f9fa" stroke="#ccc" stroke-width="0.5" />
+      <ellipse cx="0" cy="25" rx="5" ry="1" fill="#f8f9fa" stroke="#ccc" stroke-width="0.5" />
+    </g>
+    <g transform="translate(140, 40)">
+      <path d="M0,0 L-5,15 L5,15 Z" fill="#f8f9fa" opacity="0.7" stroke="#ccc" stroke-width="1" />
+      <rect x="-1" y="15" width="2" height="10" fill="#f8f9fa" stroke="#ccc" stroke-width="0.5" />
+      <ellipse cx="0" cy="25" rx="5" ry="1" fill="#f8f9fa" stroke="#ccc" stroke-width="0.5" />
+    </g>
+    
+    <!-- Wine bottle -->
+    <g transform="translate(100, 40)">
+      <rect x="-5" y="-15" width="10" height="25" rx="2" fill="#2b2d42" />
+      <rect x="-3" y="-20" width="6" height="5" rx="1" fill="#8d99ae" />
+    </g>
+    
+    <!-- Plates -->
+    <circle cx="60" cy="60" r="15" fill="#f8f9fa" stroke="#e5e5e5" stroke-width="1" />
+    <circle cx="60" cy="60" r="12" fill="none" stroke="#e5e5e5" stroke-width="0.5" />
+    <circle cx="140" cy="60" r="15" fill="#f8f9fa" stroke="#e5e5e5" stroke-width="1" />
+    <circle cx="140" cy="60" r="12" fill="none" stroke="#e5e5e5" stroke-width="0.5" />
+    
+    <!-- Utensils -->
+    <g stroke="#adb5bd" stroke-width="1" fill="none">
+      <path d="M40,55 L50,60 L40,65" />
+      <path d="M35,55 L45,60 L35,65" />
+      <line x1="80" y1="55" x2="80" y2="65" />
+      <line x1="160" y1="55" x2="160" y2="65" />
+      <line x1="120" y1="55" x2="130" y2="65" />
+      <line x1="120" y1="65" x2="130" y2="55" />
+    </g>
+    
+    <!-- Candle -->
+    <g transform="translate(100, 30)">
+      <rect x="-3" y="0" width="6" height="10" rx="1" fill="#f4a742" />
+      <ellipse cx="0" cy="0" rx="3" ry="1" fill="#ffdd00" />
+      <ellipse cx="0" cy="0" rx="1" ry="3" fill="#fff" opacity="0.8" />
+    </g>
+    
+    <!-- Hanging lights -->
+    <g fill="#ffdd00" opacity="0.7">
+      <circle cx="60" cy="-30" r="5" />
+      <circle cx="100" cy="-40" r="5" />
+      <circle cx="140" cy="-30" r="5" />
+      <line x1="60" y1="-30" x2="60" y2="-5" stroke="#adb5bd" stroke-width="0.5" />
+      <line x1="100" y1="-40" x2="100" y2="-5" stroke="#adb5bd" stroke-width="0.5" />
+      <line x1="140" y1="-30" x2="140" y2="-5" stroke="#adb5bd" stroke-width="0.5" />
+    </g>
+    
+    <!-- Table food -->
+    <path d="M60,60 C55,55 65,55 60,60" fill="#6a994e" />
+    <path d="M140,60 C135,55 145,55 140,60" fill="#bc4749" />
+    
+    <!-- Sunset warm glow -->
+    <rect x="0" y="-50" width="200" height="50" fill="#FF9A8B" opacity="0.3" />
+  </g>
+  
+  <!-- White gradient overlays for text -->
+  <rect x="0" y="0" width="1200" height="500" fill="url(#overlayGradient)" />
+  
+  <!-- Scene blending with Gaussian blur -->
+  <g filter="url(#softBlur)" opacity="0.15">
+    <rect x="300" y="0" width="50" height="500" fill="white" />
+    <rect x="650" y="0" width="50" height="500" fill="white" />
+    <rect x="950" y="0" width="50" height="500" fill="white" />
+  </g>
+</svg>
